@@ -1,0 +1,73 @@
+:root {
+    --body-color: rgb(247, 247, 248);
+    --color-white: rgb(255, 255, 255);
+
+    --text-color-first: rgb(58, 64, 90);
+    --text-color-first-hover: rgb(153, 178, 221);
+    --text-color-second: rgb(104, 80, 68);
+
+    --first-color: rgb(233, 175, 163);
+    --first-color-hover: rgb(249, 222, 201);
+
+    --second-color: rgb(58, 64, 90);
+    --third-color: rgb(153, 178, 221);
+    --first-shadow-color: rgba(104, 80, 68, 0.1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--first-color);
+}
+
+.nav_menu {
+    text-align: right;
+    margin-right: 200px;
+}
+
+.nav_list {
+    display: inline-flex;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.nav_link::before {
+    display: inline-flex;    
+    content: "";
+    background-color: var(--text-color-first);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.nav_link {
+    font-size: 16px;
+    font-weight: 500;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+    color: var(--text-color-first);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    font-size: 25px;
+}
+
+.nav_link:active {
+    color: var(--text-color-first-hover);
+}
